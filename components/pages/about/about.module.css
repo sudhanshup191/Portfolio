@@ -1,0 +1,17 @@
+.aboutLine{
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.aboutPoints{
+    display: grid;
+    grid-column: 1;
+}
+.aboutval{
+    display: flex;
+    gap: 0.8rem;
+}
+.text{
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
+}
