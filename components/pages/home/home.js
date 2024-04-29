@@ -2,13 +2,13 @@ import Header from "../../section/header/header";
 
 export default function Home (){
     return (
-        <section>
-            <h4></h4>
+        <section id="home">
+            <h4>klk</h4>
             <div>
-                <p></p>
-                <p></p>
+                <p>jnb</p>
+                <p>hnb</p>
             </div>
-            <Header/>
+            {/* <Header/> */}
         </section>
     )
 }

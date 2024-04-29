@@ -1,20 +1,20 @@
 import { headerOptions } from "../../../util/constant";
 import styles from "./header.module.css"
 import { useState } from "react"
-import { useRouter } from 'next/router'
-export default function Header(){
-    const [styleChange,setStyleChange] = useState(false)
-    
-    function handlePageSwitch(){
-        
+
+export default function Header({onOptionSelect}){
+    const [activeOption, setActiveOption] = useState(null);
+    // const router =useRouter()
+    function handlePageSwitch(path){
+        setActiveOption(path);
+        onOptionSelect(path);
     }
     return (
         <div className={styles.heading}>
-            {headerOptions.map((option)=>(
-                
-                <div  >
-                    <p className={styles.option}>{option.name}</p>
-                    <div className={styles.div}> </div>
+            {headerOptions.map((option)=>(  
+                <div key={option.path}>
+                    <p className={option.path === activeOption ? styles.activeOption : styles.option} onClick={() => handlePageSwitch(option.path)}>{option.name}</p>
+                    <div className={option.path === activeOption ? styles.div : ""} > </div>
                 </div>
             ))}
         </div>

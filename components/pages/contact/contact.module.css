@@ -1,0 +1,49 @@
+.wrapper{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* height: rem; */
+    background-color: #09203a;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between; 
+}
+.aboutLine{
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.edu{
+    background-color:#153252; 
+    color: white;
+    padding: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    width: 30rem;
+}
+.heading{
+    color: limegreen;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Raleway", sans-serif;
+}
+.icon,.socialIcons{
+    border: 2px solid #265085; /* Set border width and color */
+    border-radius: 50%;
+    background-color: #265085;
+    /* margin:2px; */
+    padding: 2.5px;
+}
+.socialIcons{
+    /* padding-right: 1rem; */
+    margin-right: 1rem;
+}

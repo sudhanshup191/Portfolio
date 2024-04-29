@@ -3,20 +3,23 @@
     gap:2rem;
     background-color: #153252;
     font-family:  "Poppins", sans-serif;
+    padding: 1.2rem;
 }
 .option{
     color: white;
-    margin-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 .div{
     background: rgb(227, 232, 89);
     box-shadow: 0 4px 4px rgba(202, 10, 10, 0.25);
     height: 3px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.15rem;
+    margin-top: 0.2rem;
     width: 30px;
 }
-.active{
+.activeOption{
     color: limegreen;
-    
+    font-size: 1.2rem;
 }
 
