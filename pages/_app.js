@@ -23,18 +23,14 @@ export default function HomePage (){
         experience : <Experience />,
         education : <Education />,
         skills : <Skills/>,
-        projects : <Project/>,
+        project : <Project/>,
         resume : <Resume/>,
         contact : <Contact/>
     }
     return (
-        <main>
-            <Header onOptionSelect={handleOptionSelect} />
+        <main >
+            <Header onOptionSelect={handleOptionSelect} isHomePage={currentPage === "home"}/>
             {componentByState[currentPage]}
-            {/* {currentPage === "home" && <Home />}
-            {currentPage === "about" && <About />}
-            {currentPage === "experience" && <Experience />}
-            {currentPage === "education" && <Education />} */}
         </main>
     )
 }

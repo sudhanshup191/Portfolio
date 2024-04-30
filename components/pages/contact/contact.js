@@ -14,7 +14,7 @@ export default function Contact (){
                 <p>CONTACT</p>
                 <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
             </div>
-            <div className={styles.wrapper}>
+            <div className={styles.newWrapper}>
                 {
                     contactDetails.map(contact=>(
                         <div className={styles.edu}>
@@ -25,13 +25,15 @@ export default function Contact (){
                             <div>
                                 <p className={styles.heading}>{contact.name}</p>
                                 {(typeof contact.value == "string" ) && <p>{contact.value}</p>}
-                                {(typeof contact.value !== "string") && contact.value.map(social =>(
+                                {(typeof contact.value !== "string") && 
+                                // .map(social =>(
                                     <div >
-                                        <LinkedInIcon onClick={()=>{window.open(social.linkedin,"_blank")}} className={styles.socialIcons} fontSize="large"/>
-                                        <GitHubIcon onClick={()=>{window.open(social.github,"_blank")}} className={styles.socialIcons} fontSize="large"/>
-                                        <GoogleIcon onClick={()=>{window.open(social.gmail,"_blank")}} className={styles.socialIcons} fontSize="large"/>       
+                                        <LinkedInIcon onClick={()=>{window.open(contact.value.linkedin,"_blank")}} className={styles.socialIcons} fontSize="large"/>
+                                        <GitHubIcon onClick={()=>{window.open(contact.value.github,"_blank")}} className={styles.socialIcons} fontSize="large"/>
+                                        <GoogleIcon onClick={()=>{window.open(contact.value.gmail,"_blank")}} className={styles.socialIcons} fontSize="large"/>       
                                     </div>
-                                ))} 
+                                // ))
+                                } 
                             </div>
                         </div>
                     ))

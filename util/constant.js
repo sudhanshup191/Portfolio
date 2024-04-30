@@ -1,6 +1,6 @@
 
-const headerOptions = [{name:"Home",path : "home"}, {name:"About",path:"about"},{name:"Education",path:"education"},{name:"Experience",path:"experience"},{name:"Projects",path:"projects"},{name:"Skills",path:"skills"},{name:"Resume",path:"resume"},{name:"Contact",path:"contact"}]
-const aboutPointsFirstHalf = [{point:"Birthday",value:"9 March 2002"},{point:"City",value:"Karnal"},]
+const headerOptions = [{name:"Home",path : "home"}, {name:"About",path:"about"},{name:"Education",path:"education"},{name:"Experience",path:"experience"},{name:"Projects",path:"project"},{name:"Skills",path:"skills"},{name:"Resume",path:"resume"},{name:"Contact",path:"contact"}]
+const aboutPointsFirstHalf = [{point:"Birthday",value:"9 March 2002"},{point:"City",value:"Karnal, India"},]
 const aboutPointsSecondHalf = [{point:"Phone",value:"+91 9050227464"},{point:"Email",value:"kirti227464@gmail.com"}]
 const interest =[{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},]
 const skills = [
@@ -34,7 +34,24 @@ const educationDetails =[{
     id:"dcrust",
     link:"https://www.dcrustm.ac.in/"
 }]
-const contactDetails = [{name:"Address",value:"Karnal, Haryana, India"},{name:"Email",value:"kirti227464@gmail.com"},{name:"Contact",value:"+91 9050227464"},{name:"Social Profiles",value:[{"linkedin" : "https://www.linkedin.com/in/kirti-bbaa501b7/","github":"https://github.com/kirti7464","gmail":"mailto:rajaprerak@gmail.com"}]}]
+const contactDetails = [{name:"Address",value:"Karnal, Haryana, India"},{name:"Email",value:"kirti227464@gmail.com"},{name:"Contact",value:"+91 9050227464"},{name:"Social Profiles",value:{"linkedin" : "https://www.linkedin.com/in/kirti-bbaa501b7/","github":"https://github.com/kirti7464","gmail":"mailto:rajaprerak@gmail.com"}}]
 const about = "I am a working professional with experience of 8 months. I have completed my Btech from DCRUST, Murthal Sonipat (Haryana). I have worked on multiple projects using different tehnologies like JS, Nodejs, ExpressJs, GIT, JWT, HTML, CSS, Postman."
 const experienceDetails = [{name:"FunctionUp",role:"Associate Software Developer",date:"September, 2023 - Present",location:"Banglore, India", responsibility:["Developing both front-end and back-end components using Node.js, Express.js for server-side logic, Next.js for client-side rendering, and JavaScript for interactive UI elements.","Develop and manage well-functioning databases and applications","Build features and applications with a mobile responsive design"],link:"https://functionup.org/"}]
-module.exports ={headerOptions,aboutPointsFirstHalf,aboutPointsSecondHalf,skills,about,experienceDetails,educationDetails,contactDetails}
+const resumeLink = "https://drive.google.com/file/d/1lo4lZYJLi7xCDS9tWlkMlDv22RdW0SY1/view?usp=sharing"
+const projects=[{
+    name:"iNoteBook",
+    about:"iNotebook-An Effortless Note Organization and Management Web App ",
+    img:"",
+    techStack:[],github:"https://github.com/kirti7464/iNotebook-frontEnd",demo:"https://i-notebook-front-end.vercel.app/",description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
+    features:[
+    "User Authentication: Sign up or log in to access the app.",
+    "Create Notes: Add new notes with a title and content.",
+    "Edit Notes: Modify existing notes.",
+    "Delete Notes: Remove notes you no longer need.",
+    "List of Notes: See all your notes at a glance."
+    ]
+}]
+module.exports = {
+    headerOptions, aboutPointsFirstHalf, aboutPointsSecondHalf, skills, about, experienceDetails, educationDetails, contactDetails,
+    resumeLink,projects
+}

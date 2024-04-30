@@ -22,4 +22,36 @@
     color: limegreen;
     font-size: 1.2rem;
 }
+.nameTxt{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    font-size: 2rem;
+    font-family: fantasy;
+    font-weight: 800;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    gap:15rem;
+    background-color: #153252;
+    font-family:  "Poppins", sans-serif;
+    /* padding: 2rem; */
+}
+.homeHeader{
+    padding-top: 10rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: block;
+    background-color: #153252;
+}
+.homeHeaderNameTxt{
+    font-size: 4rem;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
+    padding-left: 1.5rem;
+    font-family: fantasy;
+    font-weight: 800;
+    color: white;
 
+}
