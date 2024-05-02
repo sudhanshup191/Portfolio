@@ -41,7 +41,32 @@ const resumeLink = "https://drive.google.com/file/d/1lo4lZYJLi7xCDS9tWlkMlDv22Rd
 const projects=[{
     name:"iNoteBook",
     about:"iNotebook-An Effortless Note Organization and Management Web App ",
-    img:"",
+    img:"iNotebook",
+    techStack:["ReactJS","JS","Nodejs","MongoDB","ExpressJs","PostMan"],github:"https://github.com/kirti7464/iNotebook-frontEnd",demo:"https://i-notebook-front-end.vercel.app/",description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
+    features:[
+    "User Authentication: Sign up or log in to access the app.",
+    "Create Notes: Add new notes with a title and content.",
+    "Edit Notes: Modify existing notes.",
+    "Delete Notes: Remove notes you no longer need.",
+    "List of Notes: See all your notes at a glance."
+    ]
+},
+{
+    name:"Fitness Recipe",
+    about:" Fitness Recipe- Your Fitness Recipe Hub ",
+    img:"fitness",
+    techStack:["ReactJS","JS","Nodejs","MongoDB","ExpressJs","PostMan"],github:"https://github.com/kirti7464/fitnessApp-frontend",demo:"https://fitness-app-frontend-eight.vercel.app/",description:"Sign up or log in to unlock personalized recipes and fuel your journey to better health.    ",
+    features:[
+    "User Authentication: Sign up or log in to access the app.",
+    "List of Recipes: See all your recipes at a glance.",
+    "Check preparation time: Look for recipe preparation time based on your availiability.",
+    "Check Instructions: Click on read more to see detailed instructions for preparing recipe for your choice.",
+    ]
+},
+{
+    name:"iNoteBook3",
+    about:"iNotebook3-An Effortless Note Organization and Management Web App ",
+    img:"iNotebook",
     techStack:[],github:"https://github.com/kirti7464/iNotebook-frontEnd",demo:"https://i-notebook-front-end.vercel.app/",description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
     features:[
     "User Authentication: Sign up or log in to access the app.",

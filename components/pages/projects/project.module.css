@@ -30,8 +30,53 @@
    justify-content: center;
 }
 .projects{
+    padding: 2rem;
     color: white;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto the next line */
     justify-content: space-evenly; 
+}
+.info{
+    font-size: 1.5rem;
+}
+.upperBorder{
+    position: absolute;
+  top: 0;
+  width: 400px;
+  height: 200px; /* Adjust height of upper bar */
+  background-color: rgb(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .project{
+    position: relative;
+  }
+  .upperBorder::before, .upperBorder::after {
+    content: ""; /* Required for the pseudo-elements to show */
+    position: absolute;
+    border: 3px solid white; /* Adjust the border color and width as needed */
+}
+
+.upperBorder::before {
+    top: 10px;
+    left: 10px;
+    width: 15%; /* Adjust the length of the horizontal line */
+    height: 30%; /* Adjust the length of the vertical line */
+    border-right: none;
+    border-bottom: none;
+}
+
+.upperBorder::after {
+    right: 10px;
+    bottom: 10px;
+    width: 15%; /* Adjust the length of the horizontal line */
+    height: 30%; /* Adjust the length of the vertical line */
+    border-left: none;
+    border-top: none;
+}
+.modal{
+    background-color: pink;
+    padding: 4rem;
 }

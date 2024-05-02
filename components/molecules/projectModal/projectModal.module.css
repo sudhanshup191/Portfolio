@@ -1,0 +1,54 @@
+.wrapper{
+    content: "";
+    position: fixed;
+    background: #01172d;
+    background-size: cover;
+    left: 16rem;
+    /* right: 12rem; */
+    top: 5rem;
+    bottom: 2rem;
+    /* height: 80vh; */
+    width: 50rem;
+    margin: 4rem;
+    padding: 4rem;
+    color: white;
+    
+}
+
+.points{
+    /* font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+    display: flex;
+    gap: 2rem;
+    word-wrap: break-word;
+    margin-bottom: 0.2rem;
+}
+.subhead{
+    color: lime;
+    margin-bottom: 0.5rem; 
+    /* padding-right: 1rem; */
+}
+.heading{
+    font-size: 1.8rem;
+    color: limegreen;
+    margin-bottom: 2rem;
+}
+.subheadTech{
+    font-weight: 600;
+    color: lime;
+    margin-bottom: 1rem;
+}
+.subheadValue1{
+  
+   margin-left: 3.3rem;
+}
+.subheadValue2{
+   
+    margin-left: 2.5rem;
+}
+.subheadValue3{
+    margin-left: 1.4rem;
+    display: flex;
+    gap: 0.4rem;
+}
