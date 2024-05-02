@@ -6,10 +6,13 @@ import iNotebook from "../../../public/iNotebook.png"
 import { useState } from "react"
 import InfoIcon from '@mui/icons-material/Info';
 import fitness from "../../../public/fitness.png"
+import portfolio from "../../../public/portfolio.png"
+import newsapp from "../../../public/news-app.png"
 import { ProjectModal } from "../../molecules/projectModal/projectModal"
 export default function Project (){
     const [isHovered, setHovered] = useState(false)
     const [hoveredImg, setHoveredImg] = useState("")
+    const [selectedType, setSelectedType] = useState("all");
     function handleHover(position,project){
         position == "in" ? setHoveredImg(project) : setHoveredImg(null)
     }
@@ -19,6 +22,10 @@ export default function Project (){
     function handleCloseModal(){
         setHovered(null)
     }
+    function handleFilterOption(type){
+        setSelectedType(type)
+    }
+    const filteredProjects = selectedType === "all" ? projects : projects.filter(project => project.type.includes(selectedType));
     return (
         <section id="project" className={styles.wrapper}>
             <div className={styles.aboutLine}>
@@ -26,18 +33,19 @@ export default function Project (){
                 <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
             </div>
             <div className={styles.FilterButton} >
-                <button >ALL</button>
-                <button >Back-End</button>
-                <button >Front-End</button>
-                <button >Full-Stack</button>
+                <button onClick={() => handleFilterOption("all")} >ALL</button>
+                <button onClick={() => handleFilterOption("backend")} >Back-End</button>
+                <button onClick={() => handleFilterOption("frontend")}>Front-End</button>
+                <button onClick={() => handleFilterOption("fullstack")} >Full-Stack</button>
             </div>
             <div className={styles.projects}>
-                {projects.map(project=>(
+                {filteredProjects.map(project=>(
                     <div key={project.name}>
                         
                         <h4 className={styles.info}>{project?.name}</h4>
                         <div className={styles.project} onMouseOver={()=>handleHover("in",project?.name)} onMouseOut={()=>handleHover("out")} >
-                            <Image src={project?.img == "iNotebook" ? iNotebook : project?.img == "fitness" ? fitness :""} width={400} height={200}/>
+                            {/* correct img condition */}
+                            <Image src={project?.img == "iNotebook" ? iNotebook : project?.img == "fitness" ? fitness : project?.img == "portfolio" ? portfolio : newsapp} width={400} height={200}/>
                             {
                             hoveredImg == project?.name && <div className={styles.upperBorder} onClick={()=>handleClick(project)}>
                                 <InfoIcon />
@@ -45,7 +53,7 @@ export default function Project (){
                             }
                         </div>
                         {
-                            isHovered?.name==project.name && <ProjectModal open={isHovered} project={isHovered}
+                            isHovered?.name==project?.name && <ProjectModal open={isHovered} project={isHovered}
                              onClose={handleCloseModal} 
                              />
                         }

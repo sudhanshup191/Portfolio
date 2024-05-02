@@ -1,5 +1,7 @@
 
-const headerOptions = [{name:"Home",path : "home"}, {name:"About",path:"about"},{name:"Education",path:"education"},{name:"Experience",path:"experience"},{name:"Projects",path:"project"},{name:"Skills",path:"skills"},{name:"Resume",path:"resume"},{name:"Contact",path:"contact"}]
+const headerOptions = [{ name: "Home", path: "home" }, { name: "About", path: "about" }, { name: "Education", path: "education" }, { name: "Experience", path: "experience" }, { name: "Projects", path: "project" }, { name: "Skills", path: "skills" },
+//  { name: "Resume", path: "resume" }, 
+ { name: "Contact", path: "contact" }]
 const aboutPointsFirstHalf = [{point:"Birthday",value:"9 March 2002"},{point:"City",value:"Karnal, India"},]
 const aboutPointsSecondHalf = [{point:"Phone",value:"+91 9050227464"},{point:"Email",value:"kirti227464@gmail.com"}]
 const interest =[{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},]
@@ -38,21 +40,23 @@ const contactDetails = [{name:"Address",value:"Karnal, Haryana, India"},{name:"E
 const about = "I am a working professional with experience of 8 months. I have completed my Btech from DCRUST, Murthal Sonipat (Haryana). I have worked on multiple projects using different tehnologies like JS, Nodejs, ExpressJs, GIT, JWT, HTML, CSS, Postman."
 const experienceDetails = [{name:"FunctionUp",role:"Associate Software Developer",date:"September, 2023 - Present",location:"Banglore, India", responsibility:["Developing both front-end and back-end components using Node.js, Express.js for server-side logic, Next.js for client-side rendering, and JavaScript for interactive UI elements.","Develop and manage well-functioning databases and applications","Build features and applications with a mobile responsive design"],link:"https://functionup.org/"}]
 const resumeLink = "https://drive.google.com/file/d/1lo4lZYJLi7xCDS9tWlkMlDv22RdW0SY1/view?usp=sharing"
-const projects=[{
-    name:"iNoteBook",
-    about:"iNotebook-An Effortless Note Organization and Management Web App ",
-    img:"iNotebook",
-    techStack:["ReactJS","JS","Nodejs","MongoDB","ExpressJs","PostMan"],github:"https://github.com/kirti7464/iNotebook-frontEnd",demo:"https://i-notebook-front-end.vercel.app/",description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
-    features:[
-    "User Authentication: Sign up or log in to access the app.",
-    "Create Notes: Add new notes with a title and content.",
-    "Edit Notes: Modify existing notes.",
-    "Delete Notes: Remove notes you no longer need.",
-    "List of Notes: See all your notes at a glance."
-    ]
-},
+const projects=[
+    {
+        name:"Personal Portfolio",
+        type:["frontend"],
+        about:"Portfolio - An Effortless Resume reading ",
+        img:"portfolio",
+        techStack:["NextJS","MUI","JS"],github:"https://github.com/kirti7464/Portfolio",
+        // demo:"https://i-notebook-front-end.vercel.app/",
+        description:"Portfolio is a digital canvas to showcase your unique journey, skills, and achievements. ",
+        features:[
+            "Get social profile links at once.",
+        "Download Resume."
+        ]
+    },
 {
     name:"Fitness Recipe",
+    type:["frontend","backend","fullstack"],
     about:" Fitness Recipe- Your Fitness Recipe Hub ",
     img:"fitness",
     techStack:["ReactJS","JS","Nodejs","MongoDB","ExpressJs","PostMan"],github:"https://github.com/kirti7464/fitnessApp-frontend",demo:"https://fitness-app-frontend-eight.vercel.app/",description:"Sign up or log in to unlock personalized recipes and fuel your journey to better health.    ",
@@ -64,10 +68,14 @@ const projects=[{
     ]
 },
 {
-    name:"iNoteBook3",
-    about:"iNotebook3-An Effortless Note Organization and Management Web App ",
+    name:"iNoteBook",
+    type:["frontend","backend","fullstack"],
+    about:"iNotebook-An Effortless Note Organization and Management Web App ",
     img:"iNotebook",
-    techStack:[],github:"https://github.com/kirti7464/iNotebook-frontEnd",demo:"https://i-notebook-front-end.vercel.app/",description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
+    techStack:["ReactJS","JS","Nodejs","MongoDB","ExpressJs","PostMan"],
+    github:"https://github.com/kirti7464/iNotebook-frontEnd",
+    demo:"https://i-notebook-front-end.vercel.app/",
+    description:"The iNotebook is a simple and user-friendly tool that allows users to create, edit, and delete notes. Users can also sign up or log in to their accounts to access their personalized notes. ",
     features:[
     "User Authentication: Sign up or log in to access the app.",
     "Create Notes: Add new notes with a title and content.",
@@ -75,7 +83,22 @@ const projects=[{
     "Delete Notes: Remove notes you no longer need.",
     "List of Notes: See all your notes at a glance."
     ]
-}]
+},
+{
+    name:"News-App",
+    about:"News-App - A News Web App ",
+    type:["frontend"],
+    img:"news-app",
+    techStack:["ReactJS","JS"],github:"https://github.com/kirti7464/news-app",
+    // demo:"https://i-notebook-front-end.vercel.app/",
+    description:"The News React Web App is a dynamic web application that allows users to explore news articles from different categories such as Entertainment, Business, General, Health, Sports, Science, and Technology. Stay informed about the latest happenings in the world through our user-friendly interface.    ",
+    features:[
+    "Browse news articles from various categories.",
+    "User-friendly interface with easy navigation.  ",
+    "View detailed information about each news article including title, description, source, and publication date.    ",
+    ]
+}
+]
 module.exports = {
     headerOptions, aboutPointsFirstHalf, aboutPointsSecondHalf, skills, about, experienceDetails, educationDetails, contactDetails,
     resumeLink,projects

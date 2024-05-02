@@ -9,18 +9,36 @@
     color: white;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    cursor: pointer;
 }
-.div{
-    background: rgb(227, 232, 89);
-    box-shadow: 0 4px 4px rgba(202, 10, 10, 0.25);
-    height: 3px;
-    margin-bottom: 0.15rem;
-    margin-top: 0.2rem;
-    width: 30px;
+.wrapper{
+    display: flex;
+    gap:10.5rem;
+    background-color: #153252;
+    font-family:  "Poppins", sans-serif;
+    /* padding: 2rem; */
+}
+.homeHeader{
+    padding-top: 20rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display:inline-block;
+    background-color: #153252;
+    /* width: 50rem; */
+}
+.homeHeaderNameTxt{
+    font-size: 4rem;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
+    padding-left: 1.5rem;
+    font-family: fantasy;
+    font-weight: 800;
+    color: white;
 }
 .activeOption{
     color: limegreen;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 .nameTxt{
     padding-top: 1rem;
@@ -31,13 +49,22 @@
     font-weight: 800;
     color: white;
 }
-.wrapper{
-    display: flex;
-    gap:15rem;
-    background-color: #153252;
-    font-family:  "Poppins", sans-serif;
-    /* padding: 2rem; */
+.div{
+    background: rgb(227, 232, 89);
+    box-shadow: 0 4px 4px rgba(202, 10, 10, 0.25);
+    height: 3px;
+    margin-bottom: 0.15rem;
+    margin-top: 0.2rem;
+    width: 30px;
 }
+@media screen and (min-width: 1024px) {
+    .wrapper{
+        display: flex;
+        gap:25rem;
+        background-color: #153252;
+        font-family:  "Poppins", sans-serif;
+        /* padding: 2rem; */
+    }
 .homeHeader{
     padding-top: 10rem;
     padding-left: 4rem;
@@ -45,13 +72,4 @@
     display: block;
     background-color: #153252;
 }
-.homeHeaderNameTxt{
-    font-size: 4rem;
-    padding-top: 1rem;
-    /* padding-bottom: 1rem; */
-    padding-left: 1.5rem;
-    font-family: fantasy;
-    font-weight: 800;
-    color: white;
-
 }

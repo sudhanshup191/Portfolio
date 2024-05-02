@@ -1,9 +1,12 @@
+/* @media screen and (min-width: 368px) { */
 .wrap{
     padding-left: 5rem;
     /* padding-top: 1rem; */
    background-color: #153252;
-   height: 30.5rem;
+   height: 200vh;
+   width: 51.5rem;
 }
+
 .socialIcons{
     /* padding-right: 1rem; */
     margin-right: 1rem;
@@ -12,4 +15,26 @@
     background-color: white;
     /* margin:2px; */
     padding: 2.5px;
+}
+.resume{
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 600;
+    background-color: rgb(81, 77, 77);
+    margin-top: 1rem;
+    width: 10rem;
+    color: white;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+@media screen and (min-width: 1024px) {
+.wrap{
+    padding-left: 5rem;
+    /* padding-top: 1rem; */
+   background-color: #153252;
+   height: 30.5rem;
+   width: 91.9rem;
+   /* display: inline-block; */
+}
 }

@@ -10,11 +10,15 @@ import Project from "../components/pages/projects/project";
 import Resume from "../components/pages/resume/resume";
 import Contact from "../components/pages/contact/contact";
 import "../components/atom/globalStyling.css"
+import { resumeLink } from "../util/constant";
 export default function HomePage (){
     const [currentPage, setCurrentPage] = useState("home");
 
     function handleOptionSelect(path) {
         setCurrentPage(path);
+    }
+    function handleResume(){
+        window.open(resumeLink,"_blank")
     }
 
     const componentByState = {

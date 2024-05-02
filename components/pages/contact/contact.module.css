@@ -3,8 +3,8 @@
     padding-right: 4rem;
     background-color: #09203a;
     color: white;
-    height: 50rem;
-    
+    height: 300vh;
+    width: 64.8rem;
 }
 .newWrapper{
     display: flex;
@@ -51,4 +51,15 @@
 .socialIcons{
     /* padding-right: 1rem; */
     margin-right: 1rem;
+}
+@media screen and (min-width: 1024px) {
+    .wrapper{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        background-color: #09203a;
+        color: white;
+        height: 50rem;
+        width: 91.89rem;
+        
+    }
 }

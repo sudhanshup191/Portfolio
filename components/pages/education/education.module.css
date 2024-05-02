@@ -1,8 +1,9 @@
 .wrapper{
     padding-left: 4rem;
     padding-right: 4rem;
-    height: 50rem;
+    height: 300vh;
     background-color: #10263e;
+    width: 64.8rem;
 }
 .aboutLine{
     display: flex;
@@ -52,4 +53,13 @@
     word-wrap: break-word;
     margin-bottom: 0.5rem;
     margin-top: 0.8rem;
+}
+@media screen and (min-width: 1024px) {
+    .wrapper{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        height: 50rem;
+        background-color: #10263e;
+        width: 91.89rem;
+    }
 }
