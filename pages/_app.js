@@ -28,7 +28,7 @@ export default function HomePage (){
         education : <Education />,
         skills : <Skills/>,
         project : <Project/>,
-        resume : <Resume/>,
+        // resume : <Resume/>,
         contact : <Contact/>
     }
     return (
