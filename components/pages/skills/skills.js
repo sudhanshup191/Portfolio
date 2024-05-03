@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { skills } from "../../../util/constant"
 import styles from "./skills.module.css"
+import images from "../../../public/index"
 export default function Skills(){
     return (
         <section id= "skills" className={styles.divWrapper}>
@@ -10,12 +11,12 @@ export default function Skills(){
             </div>
             <div className={styles.mainWrapper}>
                 {
-                    skills.map(skill=>(
-                        <div className={styles.wrapper}>
+                    skills.map((skill,index)=>(         
+                        <div key={index} className={`${styles.wrapper}`} style={{ animationDelay: `${index * 0.1}s`}}>
                         <h4 className={styles.Details}>{skill.tech}</h4>
                         <div className={styles.subDetails}>
                         {skill.tools.map(tool=>(
-                            <Image src={tool.img} style={{marginRight:"20px"}} width={60} height={60}/>
+                            <Image alt="skillImg" src={images[tool.img]} style={{marginRight:"20px"}} width={60} height={60}/>
                             
                         ))}
                         </div>

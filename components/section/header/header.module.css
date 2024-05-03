@@ -63,7 +63,7 @@
         gap:25rem;
         background-color: #153252;
         font-family:  "Poppins", sans-serif;
-        /* padding: 2rem; */
+        width: 91.89rem;
     }
 .homeHeader{
     padding-top: 10rem;
@@ -71,5 +71,6 @@
     padding-right: 4rem;
     display: block;
     background-color: #153252;
+    width: 91.89rem;
 }
 }

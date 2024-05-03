@@ -1,14 +1,11 @@
-
 import Image from "next/image"
 import { projects } from "../../../util/constant"
 import styles from "./project.module.css"
-import iNotebook from "../../../public/iNotebook.png"
 import { useState } from "react"
 import InfoIcon from '@mui/icons-material/Info';
-import fitness from "../../../public/fitness.png"
-import portfolio from "../../../public/portfolio.png"
-import newsapp from "../../../public/news-app.png"
+import images from "../../../public/index.js";
 import { ProjectModal } from "../../molecules/projectModal/projectModal"
+
 export default function Project (){
     const [isHovered, setHovered] = useState(false)
     const [hoveredImg, setHoveredImg] = useState("")
@@ -45,7 +42,7 @@ export default function Project (){
                         <h4 className={styles.info}>{project?.name}</h4>
                         <div className={styles.project} onMouseOver={()=>handleHover("in",project?.name)} onMouseOut={()=>handleHover("out")} >
                             {/* correct img condition */}
-                            <Image src={project?.img == "iNotebook" ? iNotebook : project?.img == "fitness" ? fitness : project?.img == "portfolio" ? portfolio : newsapp} width={400} height={200}/>
+                            <Image alt="projectImg" src={images[project?.img]} width={400} height={200}/>
                             {
                             hoveredImg == project?.name && <div className={styles.upperBorder} onClick={()=>handleClick(project)}>
                                 <InfoIcon />
@@ -53,9 +50,7 @@ export default function Project (){
                             }
                         </div>
                         {
-                            isHovered?.name==project?.name && <ProjectModal open={isHovered} project={isHovered}
-                             onClose={handleCloseModal} 
-                             />
+                            isHovered?.name==project?.name && <ProjectModal open={isHovered} project={isHovered} onClose={handleCloseModal} />
                         }
                     </div>
                     

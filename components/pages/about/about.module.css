@@ -11,7 +11,7 @@
     margin-top: 2rem;
 }
 .containers{
-    display: flex;
+    display: block;
     gap:2rem;
 }
 .aboutval{
@@ -20,7 +20,8 @@
 }
 .descrip{
     margin-top: 4rem;
-    margin-right: 8rem;
+    margin-right: 6rem;
+    margin-left: 3.8rem;
     font-size: 1.2rem;
 }
 .text{
@@ -48,12 +49,62 @@
     display: flex;
     gap: 2rem;
     padding: 1rem;
+    margin-bottom: 2rem;
+   
+}
+.edu1{
+    animation: slide-in-right 1s ease-in-out 1;
+}
+.edu2{
+    animation: slide-in-left 1s ease-in-out 1;
 }
 .eduText{
     padding-top: 0.6rem;
     font-weight: 800;
 }
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20rem; */
+}
+.interests{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
 @media screen and (min-width: 1024px) {
+    .descrip{
+        margin-top: 4rem;
+        margin-right: 8rem;
+        font-size: 1.2rem;
+    }
     .wrapper{
         padding-left: 4rem;
         padding-right: 4rem;
@@ -78,5 +129,14 @@
     .aboutval{
         display: flex;
         gap: 0.8rem;
+    }
+    .interests{
+        padding-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shadow-drop-2-center {
+        -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 }

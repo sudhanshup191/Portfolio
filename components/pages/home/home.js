@@ -10,9 +10,11 @@ export default function Home (){
             <LinkedInIcon onClick={() => { window.open(contactDetails[contactDetails.length-1].value.linkedin, "_blank") }} className={styles.socialIcons} fontSize="large" />
             <GitHubIcon onClick={() => { window.open(contactDetails[contactDetails.length-1].value.github, "_blank") }} className={styles.socialIcons} fontSize="large" />
             <GoogleIcon onClick={() => { window.open(contactDetails[contactDetails.length-1].value.gmail, "_blank") }} className={styles.socialIcons} fontSize="large" />
-            <div  className={styles.resume} onClick={()=>{window.open(resumeLink,"_blank")}}>
-                <ArticleIcon/> 
+            <div className={styles.outerResume }  onClick={()=>{window.open(resumeLink,"_blank")}}>
+               <div className={styles.resume} >
+               <ArticleIcon/> 
                 <h4 style={{"margin-top":"0.2rem"}}>GET RESUME</h4>
+               </div>
             </div>
         </section>
     )
