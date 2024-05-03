@@ -3,7 +3,7 @@ import { projects } from "../../../util/constant"
 import styles from "./project.module.css"
 import { useState } from "react"
 import InfoIcon from '@mui/icons-material/Info';
-import images from "../../../public/index.js";
+import images from "../../../public/ndex.js";
 import { ProjectModal } from "../../molecules/projectModal/projectModal"
 
 export default function Project (){

@@ -1,11 +1,11 @@
 import Image from 'next/image'
-// import next from "../../../public/next.svg"
+import next from "../../../public/next.svg"
 import styles from "./about.module.css"
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import { about, aboutPointsFirstHalf, aboutPointsSecondHalf } from '../../../util/constant';
 import backendDev from "../../../public/web-settings.png"
 import learning from "../../../public/learning.png"
-import {laptop} from "../../../public/index.js"
+import {laptop} from "../../../public/ndex.js"
 export default function About (){
     return (
         <section id='about' className={styles.wrapper}>

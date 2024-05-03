@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { skills } from "../../../util/constant"
 import styles from "./skills.module.css"
-import images from "../../../public/index"
+import images from "../../../public/ndex"
 export default function Skills(){
     return (
         <section id= "skills" className={styles.divWrapper}>
