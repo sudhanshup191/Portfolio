@@ -47,7 +47,7 @@ const educationDetails =[{
     link:"https://www.dcrustm.ac.in/"
 }]
 const contactDetails = [{name:"Address",value:"Karnal, Haryana, India"},{name:"Email",value:"kirti227464@gmail.com"},{name:"Contact",value:"+91 9050227464"},{name:"Social Profiles",value:{"linkedin" : "https://www.linkedin.com/in/kirti-bbaa501b7/","github":"https://github.com/kirti7464","gmail":"mailto:rajaprerak@gmail.com"}}]
-const about = "I am a working professional with experience of 8 months. I have completed my Btech from DCRUST, Murthal Sonipat (Haryana). I have worked on multiple projects using different tehnologies like JS, Nodejs, ExpressJs, GIT, JWT, HTML, CSS, Postman."
+const about = "I am a working professional with experience of 8 months. I have completed my B.Tech from DCRUST, Murthal Sonipat (Haryana). I have worked on multiple projects using different tehnologies like JS, Nodejs, ExpressJs, GIT, JWT, HTML, CSS, Postman."
 const experienceDetails = [{name:"FunctionUp",role:"Associate Software Developer",date:"September, 2023 - Present",location:"Banglore, India", responsibility:["Developing both front-end and back-end components using Node.js, Express.js for server-side logic, Next.js for client-side rendering, and JavaScript for interactive UI elements.","Develop and manage well-functioning databases and applications","Build features and applications with a mobile responsive design"],link:"https://functionup.org/"}]
 const resumeLink = "https://drive.google.com/file/d/1lo4lZYJLi7xCDS9tWlkMlDv22RdW0SY1/view?usp=sharing"
 const projects=[

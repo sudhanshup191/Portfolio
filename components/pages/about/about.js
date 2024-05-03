@@ -5,6 +5,7 @@ import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRig
 import { about, aboutPointsFirstHalf, aboutPointsSecondHalf } from '../../../util/constant';
 import backendDev from "../../../public/web-settings.png"
 import learning from "../../../public/learning.png"
+import {laptop} from "../../../public/index.js"
 export default function About (){
     return (
         <section id='about' className={styles.wrapper}>
@@ -14,7 +15,7 @@ export default function About (){
                 <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
             </div>
             <div className={styles.containers}>
-                <div className={styles.img}> <Image src={next} width={200} height={200}/></div>
+                <div className={styles.img}> <Image src={laptop} width={370} height={380}/></div>
                 
                 <div>
                     <p className={styles.descrip} >

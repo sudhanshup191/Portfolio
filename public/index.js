@@ -19,6 +19,7 @@ import postman from "../public/postman.png"
 import netlify from "../public/netlify.png"
 import glitch from "../public/glitch.png"
 import clickup from "../public/clickup.png"
+import laptop from "../public/laptop.png"
 module.exports = {
-    fitness,github,git,postman,glitch, clickup,netlify, iNotebook, newsApp, portfolio, css, bootstrap, express, html, javaScript, mongodb, mongoose, mui, next, react, node
+    fitness, github, git,laptop, postman, glitch, clickup, netlify, iNotebook, newsApp, portfolio, css, bootstrap, express, html, javaScript, mongodb, mongoose, mui, next, react, node
 }
