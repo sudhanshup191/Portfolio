@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import next from "../../../public/next.svg"
+import next from "../../../public/next.svg"
 import styles from "./about.module.css"
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
 import { about, aboutPointsFirstHalf, aboutPointsSecondHalf } from '../../../util/constant';
