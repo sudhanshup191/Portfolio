@@ -13,7 +13,7 @@
 }
 .wrapper{
     display: flex;
-    gap:10.5rem;
+    gap:10rem;
     background-color: #153252;
     font-family:  "Poppins", sans-serif;
     /* padding: 2rem; */
