@@ -1,10 +1,10 @@
 .aboutLine{
     display: flex;
-    gap: 0.2rem;
+    gap: 1rem;
     padding: 2rem;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     /* 4$dtu*Nkv9@HX68 */
 }
 .aboutPoints{
@@ -19,9 +19,9 @@
     gap: 0.2rem;
 }
 .descrip{
-    margin-top: 4rem;
-    margin-right: 5.3rem;
-    margin-left: 5.2rem;
+    margin-top: 6rem;
+    margin-right: 4.3rem;
+    margin-left: 5rem;
     font-size: 1.2rem;
     word-break: break-word;
     width:35rem;
@@ -33,7 +33,7 @@
 }
 .wrapper{
     padding-left: 9rem;
-    padding-right: 9.5rem;
+    padding-right: 9rem;
     height: 100%;
     width: max-content;
     background-color: #10263e;
@@ -80,7 +80,7 @@
 }
 @keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-1000px);
+      -webkit-transform: translateX(-900px);
               transform: translateX(-1000px);
       opacity: 0;
     }
@@ -93,7 +93,7 @@
 @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+              transform: translateX(300px);
       opacity: 0;
     }
     100% {
