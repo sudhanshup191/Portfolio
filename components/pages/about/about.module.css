@@ -34,7 +34,7 @@
 .wrapper{
     padding-left: 9.5rem;
     padding-right: 9.5rem;
-    height: 250vh;
+    height: 100%;
     width: max-content;
     background-color: #10263e;
     color: white;
