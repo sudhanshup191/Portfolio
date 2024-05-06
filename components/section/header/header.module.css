@@ -3,7 +3,7 @@
     gap:2rem;
     background-color: #153252;
     font-family:  "Poppins", sans-serif;
-    padding: 1.2rem;
+    padding: 2rem;
 }
 .option{
     color: white;
@@ -13,7 +13,7 @@
 }
 .wrapper{
     display: flex;
-    gap:10rem;
+    gap:5.2rem;
     background-color: #153252;
     font-family:  "Poppins", sans-serif;
     /* padding: 2rem; */
@@ -41,10 +41,10 @@
     cursor: pointer;
 }
 .nameTxt{
-    padding-top: 1rem;
+    padding-top: 1.7rem;
     padding-bottom: 1rem;
     padding-left: 6rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: fantasy;
     font-weight: 800;
     color: white;
@@ -58,12 +58,18 @@
     width: 30px;
 }
 @media screen and (min-width: 1024px) {
+    .nameTxt{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 6rem;
+        font-size: 2rem;
+    }
     .wrapper{
         display: flex;
         gap:25rem;
         background-color: #153252;
         font-family:  "Poppins", sans-serif;
-        width: 91.89rem;
+        width: max-content;
     }
 .homeHeader{
     padding-top: 10rem;
@@ -71,6 +77,9 @@
     padding-right: 4rem;
     display: block;
     background-color: #153252;
-    width: 91.89rem;
+    width: max-content;
+}
+.heading{
+    padding: 1.2rem;
 }
 }

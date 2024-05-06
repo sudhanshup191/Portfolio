@@ -1,11 +1,27 @@
+.lineStyle {
+    height: 1px;
+    width:6rem; 
+    background-color:white; 
+    margin-top:2rem;
+}
 .aboutLine{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    font-size: 4rem;
+    /* 4$dtu*Nkv9@HX68 */
+}
+.aboutDATA{
     display: flex;
     gap: 1rem;
     padding: 2rem;
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* 4$dtu*Nkv9@HX68 */
+    font-size: 3rem;
 }
 .aboutPoints{
     margin-top: 2rem;
@@ -13,6 +29,7 @@
 .containers{
     display: block;
     gap:1rem;
+    margin-bottom: 1rem;
 }
 .aboutval{
     display: flex;
@@ -22,19 +39,19 @@
     margin-top: 6rem;
     margin-right: 4.3rem;
     margin-left: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     word-break: break-word;
-    width:35rem;
+    width:40rem;
 }
 .text{
     margin-top: 0.2rem;
     margin-bottom: 0.6rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .wrapper{
-    padding-left: 9rem;
-    padding-right: 9rem;
-    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
     width: max-content;
     background-color: #10263e;
     color: white;
@@ -44,7 +61,7 @@
 }
 .edu{
     background-color:#153252 ;
-    width: 20rem;
+    width: 25rem;
     text-align: left;
     margin-left: 4rem;
     color: white;
@@ -52,10 +69,9 @@
     gap: 2rem;
     padding: 1rem;
     margin-bottom: 2rem;
-   
 }
 .edu1{
-    animation: slide-in-right 1s ease-in-out 1;
+    animation: slide-in-right 0.8s ease-in-out 1;
 }
 .edu2{
     animation: slide-in-left 1s ease-in-out 1;
@@ -63,6 +79,7 @@
 .eduText{
     padding-top: 0.6rem;
     font-weight: 800;
+    font-size: 1.8rem;
 }
 .img{
     display: flex;
@@ -72,7 +89,7 @@
 }
 .interests{
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +110,7 @@
 @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);
-              transform: translateX(300px);
+              transform: translateX(250px);
       opacity: 0;
     }
     100% {
@@ -103,6 +120,19 @@
     }
   }
 @media screen and (min-width: 1024px) {
+    .lineStyle {
+        height: 1px;
+        width:6rem; 
+        background-color:white; 
+        margin-top:1rem;
+    }
+    .eduText{
+        font-weight: 800;
+        font-size: 1rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
     .img{
         margin-left: 3rem;
     }
@@ -130,6 +160,7 @@
         color: white;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        font-size: 1.5rem;
         /* 4$dtu*Nkv9@HX68 */
     }
     .aboutval{
@@ -137,12 +168,46 @@
         gap: 0.8rem;
     }
     .interests{
-        padding-top: 2rem;
+        padding-top: 1rem;
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 0.5rem;
     }
     .shadow-drop-2-center {
         -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+    .edu{
+        width: 20rem;
+    }
+    .edu1{
+        animation: slide-in-right 1s ease-in-out 1;
+    }
+    .edu2{
+        animation: slide-in-left 1s ease-in-out 1;
+    }
+    @keyframes slide-in-left {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(1000px);
+                  transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
 }

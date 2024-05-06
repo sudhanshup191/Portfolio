@@ -9,19 +9,19 @@ import {laptop} from "../../../public/ndex.js"
 export default function About (){
     return (
         <section id='about' className={styles.wrapper}>
-            <div>
-            <div className={styles.aboutLine} style={{"font-size": "1.5rem"}}>
+
+            <div className={styles.aboutLine} >
                 <p>ABOUT</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.containers}>
                 <div className={styles.img}> <Image src={laptop} width={370} height={380}/></div>
                 
-                <div>
+                <div >
                     <p className={styles.descrip} >
                         {about}
                     </p>
-                    <div className={styles.aboutLine}>
+                    <div className={styles.aboutDATA}>
                     <div className={styles.aboutPoints}>
                     {aboutPointsFirstHalf.map(info=>(
                         <div className={styles.aboutval} key={info.value}>
@@ -47,9 +47,9 @@ export default function About (){
                 </div>
             </div>
             <div>
-            <div className={styles.aboutLine} style={{"font-size": "1.5rem"}}>
+            <div className={styles.aboutLine} >
                 <p>INTEREST</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.interests}>
             <div className={`${styles.edu} ${styles.edu1}`}>
@@ -66,7 +66,7 @@ export default function About (){
             </div> */}
             </div>
             </div>
-            </div>
+
         </section>
     )
 }

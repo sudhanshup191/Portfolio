@@ -15,7 +15,7 @@
     padding-right: 4rem;
     height: 300vh;
     background-color: #10263e;
-     width: 65.6rem;
+    width: 64.9rem;
 }
 /* .heading{
     background-color: rgb(97, 127, 154);
@@ -43,8 +43,8 @@
 }
 @keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+      -webkit-transform: translateX(900px);
+              transform: translateX(200px);
       opacity: 0;
     }
     100% {
