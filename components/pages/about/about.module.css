@@ -51,7 +51,7 @@
 .wrapper{
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 100vh;
+    height: 100%;
     width: max-content;
     background-color: #10263e;
     color: white;
