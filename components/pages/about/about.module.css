@@ -32,9 +32,9 @@
     font-size: 1.5rem;
 }
 .wrapper{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    height: 300vh;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: 200vh;
     width: max-content;
     background-color: #10263e;
     color: white;
