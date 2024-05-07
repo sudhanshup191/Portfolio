@@ -20,6 +20,7 @@
 .divWrapper{
     padding-left: 7rem;
     padding-right: 7rem;
+    padding-bottom: 3rem;
     height: 100%;
     background-color: #10263e;
     width: max-content;
@@ -39,7 +40,7 @@
 .subDetails{
     padding: 2rem 3rem;
     gap:2rem;
-    margin-right: 1rem; 
+/*     margin-right: 1rem;  */
 }
 .aboutLine{
     display: flex;
