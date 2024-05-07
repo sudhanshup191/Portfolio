@@ -2,20 +2,27 @@
     border-bottom: 1px solid black;
     display :flex;
     padding: 1rem 3rem;
+    font-size: 2rem;
+}
+.lineStyle {
+    height: 1px;
+    width:6rem; 
+    background-color:white; 
+    margin-top:2rem;
 }
 .wrapper{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 2px solid rgb(228, 219, 219);
-    margin: 1rem;
-    width: 38rem;
+    margin: 5rem;
+    width: 39.5rem;
     background-color: white; animation: slide-in-right 1s ease-in-out 1;
 }
 .divWrapper{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    height: 300vh;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    height: 100%;
     background-color: #10263e;
-    width: 64.9rem;
+    width: max-content;
 }
 /* .heading{
     background-color: rgb(97, 127, 154);
@@ -25,22 +32,29 @@
 } */
 .mainWrapper{
     display: flex;
-      flex-direction: column;  justify-content: center; align-items: center;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;
 }
 .subDetails{
-    padding: 0.8rem 3rem;
+    padding: 2rem 3rem;
     gap:2rem;
-    margin-right: 10px; 
+    margin-right: 1rem; 
 }
 .aboutLine{
     display: flex;
     gap: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
+    padding: 2rem;
+    /* padding-right: 2rem; */
+    font-size: 4rem;
     color: white;
-    padding-top: 1rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
 }
+.img{
+    margin-right:2rem;
+    margin-bottom: 2rem;
+ }
 @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(900px);
@@ -54,6 +68,17 @@
     }
   }
 @media screen and (min-width: 1024px) {
+    .subDetails{
+        padding: 0.8rem 3rem;
+        gap:2rem;
+        margin-right: 10px; 
+    }
+    .Details{
+        border-bottom: 1px solid black;
+        display :flex;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+    }
     .wrapper{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border: 2px solid rgb(228, 219, 219);
@@ -68,5 +93,24 @@
         height: 50rem;
         background-color: #10263e;
         width: 91.89rem;
+    }
+    .aboutLine{
+        display: flex;
+        gap: 1.5rem;
+        padding: 2rem;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        /* 4$dtu*Nkv9@HX68 */
+    }
+    .lineStyle {
+        height: 1px;
+        width:6rem; 
+        background-color:white; 
+        margin-top:1rem;
+    }
+    .img{
+       margin-right:20px;
     }
 }

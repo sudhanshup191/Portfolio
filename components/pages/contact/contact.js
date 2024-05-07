@@ -12,7 +12,7 @@ export default function Contact (){
         <section id="contact" className={styles.wrapper} >
              <div className={styles.aboutLine}>
                 <p>CONTACT</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.newWrapper}>
                 {

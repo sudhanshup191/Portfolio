@@ -1,49 +1,70 @@
 .wrapper{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    height: 300vh;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: 100%;
     background-color: #10263e;
-    width: 64.9rem;
+    width: max-content;
+    padding-bottom: 17vh;
+}
+.lineStyle {
+    height: 1px;
+    width:6rem; 
+    background-color:white; 
+    margin-top:2rem;
 }
 .aboutLine{
     display: flex;
     gap: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
+    padding: 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    font-size: 4rem;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+.img{
+    width: 700;
+    height: 130;
 }
 .edu{
     background-color:#153252 ;
     width: 37.5rem;
     text-align: left;
-    margin-left: 4rem;
+    margin-bottom: 4rem;
     color: white;
+    /* margin: 4rem; */
+    margin-left: 7rem;
+    margin-right: 7rem;
+    
 }
 .edu:hover{
     background-color: #1F4B7B;
 }
+.lastheading{
+    font-size: 1.5rem;
+}
 .eduData{
-   padding-left: 2rem;
-   /* padding-right: 2rem; */
-   padding-bottom: 1rem;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   padding-bottom: 5rem;
 
 }
 .midheading{
     font-family: "Raleway", sans-serif;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.2rem;
     font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.2;
+    /* font-size: 1.25rem; */
+    line-height: 1.5;
+    font-size: 1.8rem;
     
 }
 .subheading{
     font-style: italic;
     margin-bottom: 0.5rem;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
+    font-size: 1.9rem;
     /* margin-bottom: 0.8rem; */
 }
 .info{
@@ -51,15 +72,68 @@
 }
 .firstheading{
     word-wrap: break-word;
-    margin-bottom: 0.5rem;
-    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
 }
 @media screen and (min-width: 1024px) {
+    .lastheading{
+        font-size: 1rem;
+    }
+    .eduData{
+        padding-left: 2rem;
+        /* padding-right: 2rem; */
+        padding-bottom: 1rem;
+     
+     }
+    .firstheading{
+        word-wrap: break-word;
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+        font-size: 1rem;
+    }
+    .midheading{
+        font-family: "Raleway", sans-serif;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        
+    }
+    .subheading{
+        font-style: italic;
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+        font-size: 1.5rem;
+        /* font-size: 1rem; */
+        /* margin-bottom: 0.8rem; */
+    }
+    .img{
+        width: 600;
+        height: 80;
+    }
+    .lineStyle {
+        height: 1px;
+        width:6rem; 
+        background-color:white; 
+        margin-top:1rem;
+    }
     .wrapper{
         padding-left: 4rem;
         padding-right: 4rem;
         height: 50rem;
         background-color: #10263e;
         width: 91.89rem;
+    }
+    .aboutLine{
+        display: flex;
+        gap: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }

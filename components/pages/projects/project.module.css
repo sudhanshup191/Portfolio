@@ -1,18 +1,29 @@
 .aboutLine{
     display: flex;
-    gap: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
+    gap: 1rem;
+    padding: 2rem;
     color: white;
-    padding: 1rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    font-size: 4rem;
+}
+.lineStyle {
+    height: 1px;
+    width:6rem; 
+    background-color:white; 
+    margin-top:2rem;
 }
 .wrapper{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    height: 300vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100%;
     background-color: #10263e;
-    width: 64.9rem;
+    width: max-content;
 }
 .FilterButton button:hover{
     background-color: #1c7d32;
@@ -22,7 +33,7 @@
    color: white;
    border: none;
    padding: 0.6rem;
-   font-size: 1rem;
+   font-size: 2rem;
    margin-right: 1rem;
 }
 .FilterButton{
@@ -31,21 +42,16 @@
    justify-content: center;
 }
 .projects{
-    padding: 4rem;
+    padding: 4.2rem;
     color: white;
     margin-left: 10rem;
-    /* display: flex;
-    align-items: center;
-  
-    justify-content: center; 
-    flex-direction: column; */
-   
+    margin-right: 10rem;
 }
 .info{
     font-size: 1.5rem;
 }
 .upperBorder{
-    position: absolute;
+position: absolute;
   top: 0;
   width: 400px;
   height: 200px; /* Adjust height of upper bar */
@@ -87,21 +93,42 @@
     padding: 4rem;
 }
 @media screen and (min-width: 1024px) {
+    .FilterButton button{
+        font-size: 1rem;
+    }
+    .aboutLine{
+        display: flex;
+        gap: 1.5rem;
+        padding: 2rem;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
     .wrapper{
         padding-left: 4rem;
         padding-right: 4rem;
-        height: 50rem;
+        height: 100%;
         background-color: #10263e;
-        width: 91.89rem;
+        width: max-content;
     }
     .projects{
         padding: 2rem;
         color: white;
+        width: 63.86rem;
         display: flex;
+        /* flex-direction: column; */
         flex-wrap: wrap; /* Allow items to wrap onto the next line */
         justify-content: space-evenly; 
+        align-items: center;
     }
     .project{
         position: relative;
       }
+      .lineStyle {
+        height: 1px;
+        width:6rem; 
+        background-color:white; 
+        margin-top:1rem;
+    }
 }

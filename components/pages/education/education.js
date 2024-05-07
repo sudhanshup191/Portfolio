@@ -8,7 +8,7 @@ export default function Education (){
             <div>
             <div className={styles.aboutLine}>
                 <p>EDUCATION</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div >
                 {
@@ -19,7 +19,7 @@ export default function Education (){
                             <p className={styles.firstheading}>{edu.name}</p>
                             <p className={styles.subheading}>{edu.degree}</p>
                             <p className={styles.midheading}>{edu.duration}</p>
-                            <p>CGPA - {edu.cgpa}</p>
+                            <p className={styles.lastheading}>CGPA - {edu.cgpa}</p>
                             </div>
                         </div>
                     ))

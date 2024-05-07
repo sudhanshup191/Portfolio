@@ -27,7 +27,7 @@ export default function Project (){
         <section id="project" className={styles.wrapper}>
             <div className={styles.aboutLine}>
                 <p>PROJECT</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.FilterButton} >
                 <button onClick={() => handleFilterOption("all")} >ALL</button>

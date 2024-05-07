@@ -7,7 +7,7 @@ export default function Skills(){
         <section id= "skills" className={styles.divWrapper}>
              <div className={styles.aboutLine}>
                 <p>SKILLS</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.mainWrapper}>
                 {
@@ -16,8 +16,7 @@ export default function Skills(){
                         <h4 className={styles.Details}>{skill.tech}</h4>
                         <div className={styles.subDetails}>
                         {skill.tools.map(tool=>(
-                            <Image alt="skillImg" src={images[tool.img]} style={{marginRight:"20px"}} width={60} height={60}/>
-                            
+                            <Image alt="skillImg" src={images[tool.img]} className={styles.img} width={60} height={60}/>       
                         ))}
                         </div>
                     </div>

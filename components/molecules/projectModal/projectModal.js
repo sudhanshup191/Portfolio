@@ -3,7 +3,7 @@ import Dialog from '@mui/material/Dialog';
 export function ProjectModal({open,project,onClose}){
     return(
         <Dialog open={project && open}  onClose={onClose}>
-            <div className={styles.wrapper} on>
+            <div className={styles.wrapper} >
                 <h4 className={styles.heading}>{project.about}</h4>
                  {project.demo && <div className={styles.points}><p className={styles.subhead}>DEMO : </p><p className={styles.subheadValue1} onClick={()=>window.open(project.demo,"_blank")}>Click here</p> </div>}
                  {project.github && <div className={styles.points}><p className={styles.subhead}>GITHUB : </p><p className={styles.subheadValue2} onClick={()=>window.open(project.github,"_blank")}>Click here</p> </div>}

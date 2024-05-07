@@ -6,7 +6,7 @@ export default function Experience (){
             <div >
             <div className={styles.aboutLine}>
                 <p>EXPERIENCE</p>
-                <div style={{height:"1px", width:"6rem",backgroundColor:"white",marginTop:"1rem"}}/>
+                <div className={styles.lineStyle}/>
             </div>
             <div className={styles.exp}>
                 {

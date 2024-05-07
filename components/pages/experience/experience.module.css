@@ -1,11 +1,19 @@
 .aboutLine{
     display: flex;
     gap: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    font-size: 4rem;
     color: white;
-    padding: 1rem;
+    padding: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+.lineStyle {
+    height: 1px;
+    width:6rem; 
+    background-color:white; 
+    margin-top:2rem;
 }
 .exp:hover{
     background-color: #1F4B7B;
@@ -13,45 +21,96 @@
 .exp{
     background-color:#153252; 
     color: white;
-    padding: 1.5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    word-wrap: break-word;
+    width: 45.4rem;
 }
 .wrapper{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    height: 300vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 100%;
     background-color: #10263e;
-    width: 64.9rem;
+    width: max-content;
+    padding-bottom: 7rem;
 }
 .heading{
     color: limegreen;
-    font-size: 1.5rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
 }
 .midheading{
     font-family: "Raleway", sans-serif;
+    font-size: 2rem;
 }
 .subheading{
     font-style: italic;
     margin-top: 0.8rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
 }
 .info{
-    margin-bottom: 0.6rem;
-   
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 .infoDiv{
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
 }
 @media screen and (min-width: 1024px) {
+    .info{
+        margin-bottom: 0.6rem;
+        font-size: 1rem;
+    }
+    .infoDiv{
+        padding-left: 1.5rem;
+    }
+    .subheading{
+        font-style: italic;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+    }
+    .midheading{
+        font-family: "Raleway", sans-serif;
+        font-size: 1rem;
+    }
+    .heading{
+        color: limegreen;
+        font-size: 1.5rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
+        font-family: "Raleway", sans-serif;
+    }
+    .exp{
+        background-color:#153252; 
+        color: white;
+        padding: 1.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .aboutLine{
+        display: flex;
+        gap: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem;
+    }
     .wrapper{
         padding-left: 4rem;
         padding-right: 4rem;
         height: 50rem;
         background-color: #10263e;
         width: 91.89rem;
+    }
+    .lineStyle {
+        height: 1px;
+        width:6rem; 
+        background-color:white; 
+        margin-top:1rem;
     }
 }
