@@ -78,7 +78,8 @@
         gap:25rem;
         background-color: #153252;
         font-family:  "Poppins", sans-serif;
-        width: 91.89rem;
+        width: 92rem;
+/*         check whther this is fine or not 91.89rem */
     }
 .homeHeader{
     padding-top: 10rem;
