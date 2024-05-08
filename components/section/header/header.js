@@ -12,7 +12,7 @@ export default function Header({onOptionSelect,isHomePage}){
         <div className={isHomePage ? styles.homeHeader : styles.wrapper}>
             <h4 className={isHomePage ? styles.homeHeaderNameTxt : styles.nameTxt}>KiRTI</h4>
             {/* add animation text here */}
-            <div className={styles.heading}>
+            <div className={isHomePage ? styles.homeHeading : styles.heading}>
             {headerOptions.map((option)=>(  
                 <div key={option.path}>
                     <p className={option.path === activeOption ? styles.activeOption : styles.option} onClick={() => handlePageSwitch(option.path)}>{option.name}</p>
