@@ -49,6 +49,15 @@
     font-weight: 800;
     color: white;
 }
+.homeHeading{
+    background-color: #10263e;
+    padding: 1.2rem;
+    display: flex;
+    gap:2rem;
+    /* background-color: #153252; */
+    font-family:  "Poppins", sans-serif;
+    padding: 2rem;
+}
 .div{
     background: rgb(227, 232, 89);
     box-shadow: 0 4px 4px rgba(202, 10, 10, 0.25);
@@ -81,6 +90,15 @@
 }
 .heading{
     padding: 1.2rem;
+/*     background-color: #10263e; */
+}
+    .homeHeading{
     background-color: #10263e;
+    padding: 1.2rem;
+    display: flex;
+    gap:2rem;
+    /* background-color: #153252; */
+    font-family:  "Poppins", sans-serif;
+    /* padding: 2rem; */
 }
 }
