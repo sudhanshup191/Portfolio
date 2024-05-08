@@ -77,4 +77,7 @@
     /* padding-left: 5rem; */
     padding-right: 77rem;
 }
+    .iconLayout{
+    display: flex;
+}
 }
