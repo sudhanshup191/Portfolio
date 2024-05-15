@@ -2,7 +2,7 @@
 const headerOptions = [{ name: "Home", path: "home" }, { name: "About", path: "about" }, { name: "Education", path: "education" }, { name: "Experience", path: "experience" }, { name: "Projects", path: "project" }, { name: "Skills", path: "skills" },
 //  { name: "Resume", path: "resume" }, 
  { name: "Contact", path: "contact" }]
-const aboutPointsFirstHalf = [{point:"Birthday",value:"9 March 2002"},{point:"City",value:"Karnal, India"},]
+const aboutPointsFirstHalf = [{point:"Birthday",value:"9 March 2002"},{point:"City",value:"Karnal, Haryana, India"},]
 const aboutPointsSecondHalf = [{point:"Phone",value:"+91 9050227464"},{point:"Email",value:"kirti227464@gmail.com"}]
 const interest =[{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},{name:"",img:""},]
 const skills = [
