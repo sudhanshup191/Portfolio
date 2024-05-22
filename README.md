@@ -2,7 +2,7 @@
 
 ## LIVE DEMO : [Click here](https://portfolio-five-lime-17.vercel.app/)
 
-This is a web app created using [Next.js](https://nextjs.org/) nad [MUI](https://mui.com/material-ui/getting-started/).
+This is a web app created using [Next.js](https://nextjs.org/) and [MUI](https://mui.com/material-ui/getting-started/).
 
 ## Features
 Its aims to showcase my personal projects, experience and personal details.
